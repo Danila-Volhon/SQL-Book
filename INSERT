@@ -1,0 +1,62 @@
+INSERT INTO	Author (
+	id, full_name, date_birth, date_death, homeland)
+	VALUES (1, 'John Writer', '01.01.1990', '01.01.2050', 'Russia');
+INSERT INTO	Author (
+	id, full_name, date_birth, date_death, homeland)
+	VALUES (2, 'Novelist Smith', '01.01.2000', '01.01.2060', 'USA');
+			
+INSERT INTO	Author (
+	id, full_name, date_birth, date_death, homeland)
+	VALUES (3, 'Author Johnson', '01.01.2010', '01.01.2070', 'China');
+	
+INSERT INTO	Author (
+	id, full_name, date_birth,  homeland)
+	VALUES (4, 'Henry Poet', '01.01.2020',  'Canada');
+	
+INSERT INTO	Author (
+	id, full_name, date_birth, date_death, homeland)
+	VALUES (5, 'Duke OManiac', '01.01.2030', '01.01.2090', 'Romania');	
+
+
+
+INSERT INTO Book (
+	id, author_id, name)
+	VALUES  (1, 2, 'The Name of Book');
+
+INSERT INTO Book (
+	id, author_id, name)
+	VALUES  (2, 3, 'Nameless');
+	
+INSERT INTO Book (
+	id, author_id, name)
+	VALUES  (3, 1, 'A Book');
+	
+INSERT INTO Book (
+	id, author_id, name)
+	VALUES  (4, 5, 'Yet Another One');
+	
+INSERT INTO Book (
+	id, author_id, name)
+	VALUES  (5, 5, 'Whatever');
+
+
+
+INSERT INTO	Edition	 (
+	id, book_id, date_published, number_copies, contry_published)
+	VALUES (1, 1, '01.01.2020', 100, 'Russia');
+	
+INSERT INTO	Edition	 (
+	id, book_id, date_published, number_copies, contry_published)
+	VALUES (2, 1, '01.01.2030', 500, 'USA');
+	
+INSERT INTO	Edition	 (
+	id, book_id, date_published, number_copies, contry_published)
+	VALUES (3, 3, '01.01.2040', 900, 'China');
+	
+INSERT INTO	Edition	 (
+	id, book_id, date_published, number_copies, contry_published)
+	VALUES (4, 3, '01.01.2050', 1300, 'Canada');
+	
+INSERT INTO	Edition	 (
+	id, book_id, date_published, number_copies, contry_published)
+	VALUES (5, 5, '01.01.2060', 1700, 'Romania');
