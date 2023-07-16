@@ -1,0 +1,25 @@
+CREATE TABLE Author(
+	id INTEGER,
+	full_name VARCHAR(255),
+	date_birth date,
+	date_death date,
+	homeland VARCHAR(255),
+	PRIMARY KEY (id)
+	);
+
+CREATE TABLE Book(
+	id INTEGER,
+	author_id INTEGER,
+	name VARCHAR(255), 
+	PRIMARY KEY (id)
+	);
+
+CREATE TABLE Edition (
+	id INTEGER,
+	book_id INTEGER,
+	date_published date,
+	number_copies INTEGER,
+	contry_published VARCHAR(255), 
+	PRIMARY KEY (id)
+	);
+
