@@ -1,0 +1,17 @@
+SELECT * FROM Edition
+JOIN Book B ON B.id = Edition.book_id
+SELECT * FROM Book
+JOIN Author	A ON A.id = Book.author_id
+
+-- Отобрать: Авторов, переживших некоторое событие. Считаем, что некоторое событие произошло 23-го октября 2077 года.
+SELECT full_name FROM Author
+ WHERE date_death > '23.10.2077';
+
+SELECT full_name, date_death FROM Author
+ WHERE date_death IS Null ;
+
+-- Отобрать: Книги, издававшиеся после смерти автора.
+SELECT name FROM Edition 
+JOIN Book B ON B.id = Edition.book_id 
+JOIN Author	A ON A.id = B.author_id
+WHERE date_published >= date_death;
